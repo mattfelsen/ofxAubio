@@ -23,6 +23,15 @@ Select projectGenerator, select 'update project', then select the path of
 Open `example_aubioDemo.xcodeproject`, drag `aubio.framework` into to it,
 placing it in `frameworks / 3rd party frameworks`.
 
+### Windows / Visual Studio 2015
+
+Note: the included pre-compiled library files only work for x64, not x86. Binaries are available for x86 but I haven't added them. At this point I'm unsure if there are debug symbols included, but it successfully runs in both Debug & Release modes.
+
+- Place `ofxAubio` in your openFrameworks addons folder.
+- Use the projectGenerator to create or update a project, including ofxAubio as an addon
+- The projectGenerator should set up the headers & .lib file properly for you
+- Copy the `export/libaubio-4.dll` file into your bin folder so it sits next to your compiled application .exe
+
 Project Homepage
 ----------------
 
